@@ -7,12 +7,11 @@ public class LambdaDemo {
 //            }
 //        };
 
-        A obj = i -> i;
-        int a = obj.show(3);
-        System.out.println(a+a);
+        A obj = i -> System.out.println("Fun" + 3);
+        obj.show(3);
     }
 }
 
 interface A {
-    int show(int i);
+    void show(int i);
 }
