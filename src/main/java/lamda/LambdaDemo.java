@@ -1,14 +1,16 @@
+package lamda;
+
 public class LambdaDemo {
     public static void main(String[] args) {
-//        A obj = new A() {
+//        lamda.A obj = new lamda.A() {
 //            @Override
 //            public void show() {
-//                System.out.println("Abc");
+//                System.out.println("designPattern.Abc");
 //            }
 //        };
 
-        A obj = i -> System.out.println("Fun" + 3);
-        obj.show(3);
+        A obj = i -> System.out.println("Fun " + i);
+        obj.show(30);
     }
 }
 
