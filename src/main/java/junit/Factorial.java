@@ -1,9 +1,9 @@
 package junit;
 
 public class Factorial {
-    public static void main(String[] args) {
-        System.out.println(new Factorial().fact(11));
-    }
+//    public static void main(String[] args) {
+//        System.out.println(new Factorial().fact(11));
+//    }
 
     public int fact(int n) {
         int res = 1;
