@@ -15,12 +15,13 @@ public class DiscountProvider implements Provider<Discountable> {
     }
 
     private boolean isLateAtNight(int currentHour) {
-        return (currentHour >= 0 && currentHour <= 4);
+        return (currentHour >= 0 && currentHour <= 12);
     }
 
     @Override
     public Discountable get() {
         int hour = LocalTime.now().getHour();
+        System.out.println(hour);
         
         if (isEarlyMorning(hour)) {
             return new EarlyBirdDiscount();

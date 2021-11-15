@@ -8,7 +8,7 @@ import week2.googleGuice.NightOwlDiscount;
 public class DiscountGuiceModule extends AbstractModule {
     @Override
     protected void configure() {
-        bind(Discountable.class).to(NightOwlDiscount.class);
+        bind(Discountable.class).to(EarlyBirdDiscount.class);
 
     }
 }

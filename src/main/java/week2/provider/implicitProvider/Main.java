@@ -9,6 +9,6 @@ public class Main {
         Injector guice = Guice.createInjector();
         CheckoutService service = guice.getInstance(CheckoutService.class);
 
-        service.checkout(100.00D);
+        service.checkout(100.00);
     }
 }
